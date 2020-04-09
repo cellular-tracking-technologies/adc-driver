@@ -1,11 +1,12 @@
 {
-  "name": "adc-driver",
+  "name": "@cellular-tracking-technologies/adc-driver",
   "version": "1.0.0",
   "description": "",
   "main": "./lib/index.js",
   "directories": {
     "lib": "lib"
   },
+  "prepublish": "npm run build",
   "scripts": {
     "build": "babel src -d ./lib",
     "start": "node ./lib/index.js",
@@ -16,15 +17,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://SheldonBlackshire@bitbucket.org/cellulartrackingtechnologies/adc-driver.git"
+    "url": "git+https://github.com/cellular-tracking-technologies/adc-driver.git"
   },
   "author": "Sheldon Blackshire",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/cellulartrackingtechnologies/adc-driver#readme",
+  "homepage": "https://github.com/cellular-tracking-technologies/adc-driver.git",
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
     "i2c-bus": "^5.1.0",
     "onoff": "^5.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
   }
 }
